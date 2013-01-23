@@ -18,9 +18,12 @@ var project3 = {
     ],
      //method function
     week3: function() {
-            say("This week we are learning a few new things.")         
-    },    
+            say("This week we are learning a few new things.")
+            say("One new thing we learned about this week is " + project3.lessons[0] );
+            say("Also we learned about " + project3.lessons[1] + " and " + project3.lessons[2]);
+    },
 };
+
 // string argument
 var hardLesson = function(objects, methods) {
    var outcome = "objects " +  "and " + " methods"
@@ -29,15 +32,49 @@ var hardLesson = function(objects, methods) {
    return string
 };
 
- 
+
+var projectTime = function(firstnumber,secondnumber) {
+    var totalTime = firstnumber + secondnumber;
+    return totalTime  
+};
+
+var activities = 5
+    while (activities > 4) {
+    activities--;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
 // main code
 project3["week3"]();        //method accessor
+
 project3.week3 = function() {       // method mutator
-    say("One of the new things I've learned is called method mutator");
+    say("Also we learned about method mutators");
 };                  
+
 project3.week3();                                              
+
 var assignment3 = hardLesson(1,2);
+
 say(assignment3);       // string return
+
+var week3Time = projectTime(4,8)
+
+say("The activities will take me " + activities + " hours to complete.");
+
+say("The aproximate total time for this project is " + week3Time + " hours" +".");
+
+
 
 
 
