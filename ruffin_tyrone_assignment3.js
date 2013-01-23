@@ -23,6 +23,17 @@ var project3 = {
             say("Also we learned about " + project3.lessons[1] + " and " + project3.lessons[2]);
     },
 };
+project3["week3"]();        //method accessor
+
+project3.week3 = function() {       // method mutator
+    say("Also we learned about method mutators");
+};               
+
+project3.week3();                                              
+
+
+
+
 
 // string argument
 var hardLesson = function(objects, methods) {
@@ -31,6 +42,7 @@ var hardLesson = function(objects, methods) {
    var string = "This weeks assignment is very challenging but I think I got the hang of it."
    return string
 };
+
 
 
 var projectTime = function(firstnumber,secondnumber) {
@@ -43,6 +55,18 @@ var activities = 5
     activities--;
 };
 
+var assignment3 = hardLesson(1,2);
+
+say(assignment3);       // string return
+var week3Time = projectTime(4,8)
+
+var week3 = {
+    activity3: "Objects",
+    activity4: "data structure",
+    activity5: "flowcharts",
+    activity6: "public and private"
+
+};
 
 
 
@@ -56,19 +80,13 @@ var activities = 5
 
 
 // main code
-project3["week3"]();        //method accessor
+   
 
-project3.week3 = function() {       // method mutator
-    say("Also we learned about method mutators");
-};                  
 
-project3.week3();                                              
 
-var assignment3 = hardLesson(1,2);
 
-say(assignment3);       // string return
 
-var week3Time = projectTime(4,8)
+
 
 say("The activities will take me " + activities + " hours to complete.");
 
