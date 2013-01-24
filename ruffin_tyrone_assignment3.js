@@ -60,6 +60,7 @@ var assignment3 = hardLesson(1,2);
 say(assignment3);       // string return
 var week3Time = projectTime(4,8)
 
+//JSON
 var week3 = {
     activity3: "Objects",
     activity4: "data structure",
@@ -69,11 +70,26 @@ var week3 = {
 };
 
 say(week3.activity3 + " Are a cool new data type that i think comes in handy" + ".");
-say("Also the " + week3.activity4 + " activity teaches us how to use data from a stored location" + ".")
-say("One of the harder lessons this week is making our own " + week3.activity5 + ".")
-say("The " + week3.activity6 + " video was very informative" +".")
+say("Also the " + week3.activity4 + " activity teaches us how to use data from a stored location" + ".");
+say("One of the harder lessons this week is making our own " + week3.activity5 + ".");
+say("The " + week3.activity6 + " video was very informative" +".");
 
+// boolean
+var project3 = function(coding,gitpush) {
+    var programing = "It is " + coding + " that I enjoy coding" +".";
+    return programing
+ };
+    var coding = true
+    var gitpush = true
+    
+if (coding == true){
+    say("Although I love coding, I do find it challenging");
+    } else {      
+    say("I dont like coding at all.");       
+};
 
+var SDI = project3(coding , gitpush);       // boolean
+say(SDI);      // boolean
 
 
 
