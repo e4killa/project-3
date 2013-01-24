@@ -68,6 +68,10 @@ var week3 = {
 
 };
 
+say(week3.activity3 + " Are a cool new data type that i think comes in handy" + ".");
+say("Also the " + week3.activity4 + " activity teaches us how to use data from a stored location" + ".")
+say("One of the harder lessons this week is making our own " + week3.activity5 + ".")
+say("The " + week3.activity6 + " video was very informative" +".")
 
 
 
@@ -76,18 +80,7 @@ var week3 = {
 
 
 
-
-
-
-// main code
-   
-
-
-
-
-
-
-
+// output
 say("The activities will take me " + activities + " hours to complete.");
 
 say("The aproximate total time for this project is " + week3Time + " hours" +".");
