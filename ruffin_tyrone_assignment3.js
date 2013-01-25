@@ -95,11 +95,15 @@ say(SDI);      // boolean
 
 
 // array
-var goToTraining = [
+var goToTraining = function(){
+    var sessions = [
     "online tutoring",
     "certain hours",
     "instructor interaction"
-];
+    ];
+ 
+return "I really benefited from the " + sessions[0] + " and the " + sessions[2] + "."
+};
 say("I love the fact that in this class there is " + goToTraining[2] + ".");
 
 for (var assignMents = 1; assignMents > 0; assignMents--) {
@@ -108,7 +112,8 @@ for (var assignMents = 1; assignMents > 0; assignMents--) {
        var thirdWeek = "project three"
        say("First I finished " + firstWeek + " then I finished " + secondWeek + " Now i'm complete with " + thirdWeek);
 };
-
+var sdi = goToTraining()
+say(sdi)
 
 
 
