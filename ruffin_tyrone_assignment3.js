@@ -101,10 +101,11 @@ var goToTraining = function(){
     "certain hours",
     "instructor interaction"
     ];
- 
+say("I love the fact that in this class there is " + sessions[2] + ".");
+
 return "I really benefited from the " + sessions[0] + " and the " + sessions[2] + "."
 };
-say("I love the fact that in this class there is " + goToTraining[2] + ".");
+
 
 for (var assignMents = 1; assignMents > 0; assignMents--) {
        var secondWeek = "project two"
