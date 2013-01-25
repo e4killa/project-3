@@ -16,11 +16,13 @@ var project3 = {
         "FlowCharts",
         "GoogleDocs"
     ],
+    
      //method function
     week3: function() {
             say("This week we are learning a few new things.")
             say("One new thing we learned about this week is " + project3.lessons[0] );
             say("Also we learned about " + project3.lessons[1] + " and " + project3.lessons[2]);
+            var output = "This class has been very insightful and has helped me learn about coding."
     },
 };
 project3["week3"]();        //method accessor
@@ -32,9 +34,6 @@ project3.week3 = function() {       // method mutator
 project3.week3();                                              
 
 
-
-
-
 // string argument
 var hardLesson = function(objects, methods) {
    var outcome = "objects " +  "and " + " methods"
@@ -44,7 +43,7 @@ var hardLesson = function(objects, methods) {
 };
 
 
-
+// number
 var projectTime = function(firstnumber,secondnumber) {
     var totalTime = firstnumber + secondnumber;
     return totalTime  
@@ -80,17 +79,35 @@ var project3 = function(coding,gitpush) {
     return programing
  };
     var coding = true
-    var gitpush = true
+    var gitpush = false
     
 if (coding == true){
     say("Although I love coding, I do find it challenging");
     } else {      
-    say("I dont like coding at all.");       
+    say("I dont like coding at all.");
+if (gitpush == false){
+    say("The coding for is class was pretty hard but I finished it");
+    };
 };
 
 var SDI = project3(coding , gitpush);       // boolean
 say(SDI);      // boolean
 
+
+// array
+var goToTraining = [
+    "online tutoring",
+    "certain hours",
+    "instructor interaction"
+];
+say("I love the fact that in this class there is " + goToTraining[2] + ".");
+
+for (var assignMents = 1; assignMents > 0; assignMents--) {
+       var secondWeek = "project two"
+       var firstWeek = "project one"
+       var thirdWeek = "project three"
+       say("First I finished " + firstWeek + " then I finished " + secondWeek + " Now i'm complete with " + thirdWeek);
+};
 
 
 
@@ -100,8 +117,6 @@ say(SDI);      // boolean
 say("The activities will take me " + activities + " hours to complete.");
 
 say("The aproximate total time for this project is " + week3Time + " hours" +".");
-
-
 
 
 
